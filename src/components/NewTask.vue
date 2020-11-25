@@ -59,4 +59,16 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.add-active {
+  @apply text-green-600 border-green-600;
+}
+
+.add-active:hover {
+  @apply text-white bg-green-600;
+}
+
+.add-disabled {
+  @apply text-gray-300 border-gray-300;
+}
+</style>

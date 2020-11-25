@@ -54,4 +54,21 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style>
+.done {
+  @apply text-green-600 border-green-600;
+}
+
+.done:hover {
+  @apply bg-green-600;
+}
+
+.not-done {
+  @apply text-gray-500 border-gray-500;
+  min-width: 6rem;
+}
+
+.not-done:hover {
+  @apply bg-gray-500;
+}
+</style>
