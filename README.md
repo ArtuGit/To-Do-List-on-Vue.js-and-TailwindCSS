@@ -1,4 +1,6 @@
-# vue-sandbox
+# To Do List
+
+On Vue.js 3 and TailwindCSS 2.
 
 ## Project setup
 ```
