@@ -2,6 +2,13 @@
 
 On Vue.js 3 and TailwindCSS 2.
 
+## Deploy to GitHub Pages
+```
+sh scripts/deploy.sh
+```
+
+----
+
 ## Project setup
 ```
 npm install
