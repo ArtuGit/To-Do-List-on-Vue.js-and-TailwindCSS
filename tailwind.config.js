@@ -1,5 +1,10 @@
 module.exports = {
-  purge: ["./public/**/*.html", "./src/**/*.vue", "./assets/css/tailwind.css"],
+  purge: [
+    "./public/**/*.html",
+    "./assets/**/*.css",
+    "./src/**/*.vue",
+    "./src/**/*.js"
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {}
