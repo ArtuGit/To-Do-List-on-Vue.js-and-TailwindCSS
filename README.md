@@ -2,6 +2,9 @@
 
 On Vue.js 3 and TailwindCSS 2
 
+## Demo
+https://artugit.github.io/To-Do-List-on-Vue.js-and-TailwindCSS/
+
 ## Deploy to GitHub Pages
 ```
 sh scripts/deploy.sh
