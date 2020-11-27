@@ -7,26 +7,26 @@
       </div>
       <div>
         <task
-            v-for="task in tasks"
-            :key="task.id"
-            :p-done="task.done"
-            :p-id="task.id"
-            :p-name="task.name"
-            @delete="deleteTask"
-            @toggle-done="toggleDone"
+          v-for="task in tasks"
+          :key="task.id"
+          :p-done="task.done"
+          :p-id="task.id"
+          :p-name="task.name"
+          @delete="deleteTask"
+          @toggle-done="toggleDone"
         >
         </task>
       </div>
       <total
-          :p-done="tasksDone"
-          :p-not-done="tasksNotDone"
-          :p-total="tasksTotal"
+        :p-done="tasksDone"
+        :p-not-done="tasksNotDone"
+        :p-total="tasksTotal"
       ></total>
     </section>
     <div class="mt-8 text-gray-500 italic">
       Developed by
       <a class="author" href="https://github.com/ArtuGit" target="_blank"
-      >Artu</a
+        >Artu</a
       >
     </div>
   </main>
