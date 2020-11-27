@@ -1,6 +1,6 @@
 # To Do List
 
-On Vue.js 3 and TailwindCSS 2.
+On Vue.js 3 and TailwindCSS 2
 
 ## Deploy to GitHub Pages
 ```
