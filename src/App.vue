@@ -1,5 +1,5 @@
 <template>
-  <main class="flex items-center justify-center">
+  <main class="flex flex-col flex-no-wrap items-center justify-center">
     <section class="todo bg-white border rounded shadow-xl p-6">
       <div class="mb-4">
         <h1 class="text-3xl text-gray-700">Todo List</h1>
@@ -7,22 +7,26 @@
       </div>
       <div>
         <task
-          v-for="task in tasks"
-          :key="task.id"
-          :p-done="task.done"
-          :p-id="task.id"
-          :p-name="task.name"
-          @delete="deleteTask"
-          @toggle-done="toggleDone"
+            v-for="task in tasks"
+            :key="task.id"
+            :p-done="task.done"
+            :p-id="task.id"
+            :p-name="task.name"
+            @delete="deleteTask"
+            @toggle-done="toggleDone"
         >
         </task>
       </div>
       <total
-        :p-total="tasksTotal"
-        :p-done="tasksDone"
-        :p-not-done="tasksNotDone"
+          :p-done="tasksDone"
+          :p-not-done="tasksNotDone"
+          :p-total="tasksTotal"
       ></total>
     </section>
+    <div class="mt-8 text-gray-500 italic">
+      Developed by
+      <a class="author" href="https://github.com/ArtuGit" target="_blank">Artu</a>
+    </div>
   </main>
 </template>
 
@@ -90,5 +94,9 @@ export default {
 <style>
 .todo {
   max-width: 90%;
+}
+
+.author {
+  border-bottom: 1px dashed;
 }
 </style>
