@@ -25,7 +25,9 @@
     </section>
     <div class="mt-8 text-gray-500 italic">
       Developed by
-      <a class="author" href="https://github.com/ArtuGit" target="_blank">Artu</a>
+      <a class="author" href="https://github.com/ArtuGit" target="_blank"
+      >Artu</a
+      >
     </div>
   </main>
 </template>
@@ -59,8 +61,8 @@ export default {
     };
   },
   methods: {
-    toggleDone(taskdId) {
-      const identifiedTask = this.tasks.find(task => task.id === taskdId);
+    toggleDone(taskId) {
+      const identifiedTask = this.tasks.find(task => task.id === taskId);
       identifiedTask.done = !identifiedTask.done;
     },
     deleteTask(taskId) {
